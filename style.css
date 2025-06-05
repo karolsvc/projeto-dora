@@ -67,7 +67,7 @@ html {
 /* Apresentação */
 .apresentacao {
     height: 100vh;
-    background-image: url(/fundo1.jpg);
+    background-image: url(assets/fundo1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,7 +147,7 @@ html {
 
 /* Seção inscrição */
 .container.terciario {
-    background-image: url(/fundo2.jpg);
+    background-image: url(assets/fundo2.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -185,4 +185,4 @@ html {
 .apresentacao__links__link {
     background-color: var(--branco-principal);
     color: var(--verde-secundario);
-    width: 28
+ 
