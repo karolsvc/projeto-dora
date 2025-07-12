@@ -13,7 +13,7 @@ html {
     --branco-principal: #DAD7CD;
     --verde-secundario: #3A5A40;
     --verde-terciario: #819985;
-    --fonte-principal: "Cal Sans", sans-serif;
+    --fonte-principal: "Playfair Display", serif;
     --fonte-secundaria: "Raleway", sans-serif;
     --fonte-terciaria: "Alfa Slab One", serif;
 }
@@ -34,7 +34,7 @@ html {
     gap: 40px;
 }
 .menu__link {
-    font-family: var(--fonte-terciaria);
+    font-family: var(--fonte-principal);
     font-size: 20px;
     color: white;
     text-decoration: none;
@@ -65,7 +65,7 @@ html {
 
 
 /* Apresentação */
-.apresentacao {
+.container_primario {
     height: 100vh;
     background-image: url(assets/fundo1.jpg);
     background-size: cover;
@@ -79,7 +79,7 @@ html {
     right: 12px;
     top: 50%;
     transform: translateY(-50%);
-    font-family: var(--fonte-terciaria);
+    font-family: var(--fonte-principal);
     
     font-size: 62px;
     line-height: 1;
@@ -111,27 +111,29 @@ html {
 /* Conteúdo secundário */
 .container_secundario {
     background-color: var(--branco-principal);
-    padding: 60px 5% 40px;
+    /* padding: 60px 5% 40px; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
 }
 .conteudo_secundario {
     max-width: 1200px;
-    margin: auto;
+    margin: 4em 8em;
 }
 
 .titulo__segundo {
-    font-family: var(--fonte-terciaria);
+    font-family: var(--fonte-principal);
     font-size: 36px;
     color: var(--verde-secundario);
     text-align: center;
-    padding: 80px;
+    /* padding: 60px; */
+    margin: 2em;
 }
 
 .conteudo__descricao__primeiro {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-principal);
     font-size: 20px;
     color: var(--verde-terciario);
     line-height: 1.6;
@@ -143,6 +145,7 @@ html {
     line-height: 1.6;
     text-align: center;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 /* Seção inscrição */
@@ -160,20 +163,24 @@ html {
 }
 
 .titulo__terceiro {
-    font-family: var(--fonte-terciaria);
+    font-family: var(--fonte-principal);
     font-size: 36px;
     color: var(--branco-principal);
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
+    max-width: 280px;
+    margin: -10;
+    font-weight: bold;
 }
 
 .apresentacao__conteudo__titulo {
     font-family: var(--fonte-principal);
-    font-size: 12px;
+    font-size: 16px;
     color: var(--branco-principal);
-    text-align: center;
+    text-align: left;
     max-width: 280px;
     margin: -10;
+    font-weight: bold;
 }
 
 
