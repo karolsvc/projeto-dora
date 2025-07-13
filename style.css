@@ -111,7 +111,7 @@ html {
 /* Conteúdo secundário */
 .container_secundario {
     background-color: var(--branco-principal);
-    /* padding: 60px 5% 40px; */
+    padding: 60px 5% 40px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -120,7 +120,8 @@ html {
 }
 .conteudo_secundario {
     max-width: 1200px;
-    margin: 4em 8em;
+    margin: auto;
+    content: 50px;
 }
 
 .titulo__segundo {
@@ -128,7 +129,7 @@ html {
     font-size: 36px;
     color: var(--verde-secundario);
     text-align: center;
-    /* padding: 60px; */
+    padding: 60px;
     margin: 2em;
 }
 
