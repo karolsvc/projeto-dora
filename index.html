@@ -3,85 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Dora</title>
-
-  <!-- Fontes -->
+  <meta name="description" content="Projeto Dora: passe um final de semana no centro do Opus Dei, conheça o dia a dia de uma numerária auxiliar e descubra o que significa fazer do mundo um lar.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cal+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-  
-  <!-- Ícones Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
-  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <title>Projeto Dora</title>
 </head>
-
 <body>
 
-  <header class="cabecalho">
-  
-  
-  <nav class="cabecalho__menu">
-    <a class="menu__link" href="#home">HOME</a>
-    <a class="menu__link" href="#projeto">O QUE É O PROJETO DORA</a>
-    <a class="menu__link" href="#inscricao">INSCREVA-SE</a>
-  </nav>
+  <a class="pular-conteudo" href="#principal">Pular para o conteúdo</a>
 
-  <!-- Ícone do menu hambúrguer -->
-  <div class="menu-hamburguer" id="menu-hamburguer">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
-
-  <section id="home" class="container_primario">
-    <h1 class="titulo">FAZER DO MUNDO UM LAR</h1>
-    <span class="apresentacao__icone material-symbols-outlined">expand_more</span>
-  </section>
-
-  <section id="projeto" class="container_secundario">
-    <div class="conteudo_secundario">
-      <h2 class="titulo__segundo">PROJETO DORA</h2>
-      <p class="conteudo__descricao__primeiro">
-        “A mensagem fundacional que São Josemaria recebeu conduz à transformação do mundo através do trabalho e com uma dimensão familiar, na Igreja, que é família e povo de Deus. O trabalho ordenará o mundo a Deus se estiver bem feito e colocar as necessidades das pessoas no centro: ou seja, quando quem trabalha coloca no centro a dimensão pessoal, de serviço, que toda a tarefa tem. Nesse contexto, São Josemaria colocou à disposição dos seus filhos o lar da sua mãe e, meditando sobre essa experiência, advertiu como era decisivo esse modo de cuidar – num ambiente de família – para assimilarem a formação e para a fidelidade dos seus filhos.”
-      </p>
-      <p class="conteudo__descricao__segundo">
-        O Projeto Dora consiste em passar um final de semana na Administração de uma casa do Opus Dei, para beber da fonte e ver como é o dia a dia de uma numerária auxiliar e aprofundar no espírito do Opus Dei. O projeto se chama Dora, pois esse era o nome da primeira numerária auxiliar do Opus Dei.
-      </p>
+  <header id="cabecalho">
+    <div class="cabecalho-conteudo">
+      <p class="marca">Projeto Dora</p>
+      <nav aria-label="Navegação principal">
+        <button class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuLista">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="menuLista">
+          <li><a href="#sobre">O projeto</a></li>
+          <li><a href="#galeria">Momentos</a></li>
+          <li><a href="#inscricao">Inscreva-se</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section id="inscricao">
-    <div class="container terciario">
-      <p class="titulo__terceiro">INSCREVA-SE</p>
-      <p class="apresentacao__conteudo__titulo">A inscrição não garante a vaga. Será feita uma entrevista prévia.</p>
-      <div class="apresentacao__links">
-        <a class="apresentacao__links__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdMwguf5tkGwS_5lQARMCuYRVVjH4brNiUqil1l5NdXGu47cg/viewform?usp=dialog">Miralta</a>
-        <!-- <a class="apresentacao__links__link" href="">Pilar</a>
-        <a class="apresentacao__links__link" href="">Buritis</a> -->
-        <a class="apresentacao__links__link" href="https://docs.google.com/forms/d/e/1FAIpQLScvypZTp4h5095UQf0sNqrMDG0sW6idl5wUy6gDqWnlqUoQTw/viewform">Moinho</a>
+  <main>
+
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 650px)" srcset="assets/projetod3460.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="assets/projetod3-650.png" type="image/png">
+        <img src="assets/projetod3-900.png" alt="Meninas reunidas e sorrindo durante o Projeto Dora">
+      </picture>
+      <div class="hero-texto" id="principal">
+        <h1>Fazer do mundo<br>um lar</h1>
+        <a class="botao" href="#inscricao">Quero me inscrever</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-<script>
-  const menuHamburguer = document.getElementById('menu-hamburguer');
-  const menu = document.querySelector('.cabecalho__menu');
+    <section id="sobre" class="sobre">
+      <div class="sobre-cabecalho">
+        <h2>O que é o Projeto Dora?</h2>
+      </div>
+      <div class="sobre-texto">
+        <p>O Projeto Dora consiste em passar um final de semana no centro do Opus Dei para vivenciar o dia a dia de uma numerária auxiliar e entender melhor o espírito do Opus Dei.</p>
+        <p>O projeto se chama Dora, pois esse era o nome da primeira numerária auxiliar do Opus Dei.</p>
+      </div>
+    </section>
 
-  menuHamburguer.addEventListener('click', () => {
-    menu.classList.toggle('ativo');
-  });
+    <section id="galeria" class="galeria">
+      <h2 class="galeria-titulo">Momentos do Dora</h2>
+      <div class="galeria-trilho" id="galeriaTrilho">
+        <figure><img src="assets/projetod1-1.png" alt="Meninas participando de uma atividade do Projeto Dora" loading="lazy"></figure>
+        <figure><img src="assets/projetod2250.png" alt="Meninas participando de uma atividade do Projeto Dora" loading="lazy"></figure>
+        <figure><img src="assets/projetod4-1.JPEG" alt="Meninas participando de uma atividade do Projeto Dora" loading="lazy"></figure>
+        <figure><img src="assets/projetod7.png" alt="Meninas participando de uma atividade do Projeto Dora" loading="lazy"></figure>
+        <figure><img src="assets/projetod8.png" alt="Meninas participando de uma atividade do Projeto Dora" loading="lazy"></figure>
+        <figure><img src="assets/projetod10.png" alt="Meninas participando de uma atividade do Projeto Dora" loading="lazy"></figure>
+      </div>
+      <div class="galeria-controles">
+        <button id="galeriaAnterior" aria-label="Ver foto anterior">&larr;</button>
+        <button id="galeriaProxima" aria-label="Ver próxima foto">&rarr;</button>
+      </div>
+    </section>
 
-  // Fecha o menu ao clicar em algum link
-  const links = document.querySelectorAll('.menu__link');
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('ativo');
-    });
-  });
-</script>
+    <section id="inscricao" class="inscricao">
+      <div class="inscricao-intro">
+        <h2>Inscreva-se</h2>
+        <p>A inscrição não garante a vaga. Será feita uma entrevista prévia.</p>
+      </div>
 
+      <div id="endereco">
+        <h3>Escolha um centro</h3>
+        <ul class="lista-enderecos">
+          <li>
+            <a href="">
+              <h4>Miralta</h4>
+              <p><a href="https://maps.google.com/?q=Av.+Prof.+Alfonso+Bovero,+153+-+Sumaré,+São+Paulo+-+SP" target="_blank" rel="noopener">Av. Prof. Alfonso Bovero, 153 — Sumaré, São Paulo - SP</a></p>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScvypZTp4h5095UQf0sNqrMDG0sW6idl5wUy6gDqWnlqUoQTw/viewform">
+              <h4>Moinho</h4>
+              <p><a href="https://maps.google.com/?q=Av.+José+Giorgi,+935+-+Granja+Viana+II,+Cotia+-+SP" target="_blank" rel="noopener">Av. José Giorgi, 935 — Granja Viana II, Cotia - SP</a></p>
+            </a>
+          </li>
+          <li>
+            <h4>Pilar</h4>
+            <p><a href="https://maps.google.com/?q=Estr.+dos+Romeiros,+km+37,5+-+Itaim+Mirim,+Santana+de+Parnaíba+-+SP" target="_blank" rel="noopener">Estr. dos Romeiros, km 37,5 — Itaim Mirim, Santana de Parnaíba - SP</a></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
